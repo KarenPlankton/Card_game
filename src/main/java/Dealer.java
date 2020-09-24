@@ -10,6 +10,7 @@ public class Dealer {
     public Dealer(Deck deck,ArrayList players) {
         this.deck = deck;
         this.players = players;
+        this.deal();
     }
 
 
@@ -33,6 +34,9 @@ public class Dealer {
 
     public void deal() {
         for (Player player : this.players) {
+            player.takeCard(getCardFromDeck());
+            player.takeCard(getCardFromDeck());
+            player.takeCard(getCardFromDeck());
             player.takeCard(getCardFromDeck());
         }
 

@@ -8,7 +8,8 @@ public class Deck
 
       public Deck(){
           this.cards=new ArrayList<Card>();
-
+          this.createDeck();
+          this.shuffleDeck();
       }
 
       public void createDeck(){
@@ -16,6 +17,7 @@ public class Deck
           for (Suit suit : Suit.values()){
               for(Rank rank :Rank.values()){
                   Card card = new Card(suit,rank);
+
                   this.cards.add(card);
               }
           }
@@ -29,9 +31,6 @@ public class Deck
           return this.cards.remove(0);
       }
 
-//      public void deal() {
-//          for (Player player : this.players) {
-//              player.receiveCard(getCardFromDeck());
-//          }
+
 
       }

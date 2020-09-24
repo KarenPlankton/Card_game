@@ -17,6 +17,8 @@ public class Game {
         String winnerName = "";
         int winner = 0;
         for (Player player: players){
+            System.out.println("Current player "+player.getName());
+            System.out.println("Current player value "+player.handValue());
             int value = player.handValue();
             if (winner < value) {
                 winnerName= player.getName();
@@ -24,7 +26,7 @@ public class Game {
             }
 
         }
-        System.out.println("The winner is:"+ winnerName);
+        System.out.println("The winner is: "+ winnerName);
         return winner;
       }
 
