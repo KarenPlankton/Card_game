@@ -7,9 +7,9 @@ public class Dealer {
     private Deck deck;
     private ArrayList<Player> players;
 
-    public Dealer(Deck deck) {
+    public Dealer(Deck deck,ArrayList players) {
         this.deck = deck;
-        this.players = new ArrayList<Player>();
+        this.players = players;
     }
 
 
