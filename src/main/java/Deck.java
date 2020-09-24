@@ -24,4 +24,14 @@ public class Deck
       public void shuffleDeck(){
           Collections.shuffle(this.cards);
   }
-}
+
+      public Card removeCard(){
+          return this.cards.remove(0);
+      }
+
+//      public void deal() {
+//          for (Player player : this.players) {
+//              player.receiveCard(getCardFromDeck());
+//          }
+
+      }
